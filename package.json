@@ -7,6 +7,11 @@
   "scripts": {},
   "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
   "license": "MIT",
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "http://github.com/jfromaniello/recurse-delete-property.git"
+  },
   "dependencies": {
     "commander": "^2.2.0"
   }
