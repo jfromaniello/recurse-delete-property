@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var content = '';
+
+var removeRecurse = require('../');
+
+var program = require('commander');
+
+program
+  .version(require('../package').version)
+  .option('-p, --property <name>', 'The property to remove')
+  .option('-i, --indent <spaces> ', 'Number of spaces in the output', parseInt)
+  .parse(process.argv);
+
+process.stdin.resume();
+
+process.stdin.on('data', function(buf) {
+  content += buf.toString();
+}).on('end', function() {
+  var obj = removeRecurse(JSON.parse(content), program.property);
+  console.log(JSON.stringify(obj, null, program.indent));
+});
