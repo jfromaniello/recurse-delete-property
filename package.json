@@ -1,16 +1,15 @@
 {
   "name": "recurse-delete-property",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "bin": "bin/recurse-delete-property",
   "scripts": {},
   "author": "Jose F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
   "license": "MIT",
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "http://github.com/jfromaniello/recurse-delete-property.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jfromaniello/recurse-delete-property.git"
   },
   "dependencies": {
     "commander": "^2.2.0"
