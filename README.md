@@ -8,7 +8,11 @@ npm i recurse-delete-property
 
 ~~~javascript
 var rdp = require('recurse-delete-property');
-console.log(rdp({ foo: 123, bar: 456, baz: { foo: 543 }}));
+var input = { foo: 123, bar: 456, baz: { foo: 543 }};
+
+var output = rdp(input, 'foo');
+
+console.log(output);
 
 // prints:
   { bar: 456, baz: {  } }
